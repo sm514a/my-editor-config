@@ -1,0 +1,13 @@
+*.bak
+.gitconfig
+.apmrc
+.apm/
+.git-history/
+.node-gyp/
+split-diff
+git-time-machine/
+blob-store/
+compile-cache/
+node_modules/
+packages/
+storage/

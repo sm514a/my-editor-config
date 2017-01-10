@@ -1,0 +1,117 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+  "atom-beautify":
+    general:
+      _analyticsUserId: "ff6401b2-ef5e-4d85-a300-6bdbb2d6d63f"
+  "auto-encoding":
+    disallowEncTypes: "windows1252, iso88592"
+    divideSize: 20
+    forceEncTypes: "ibm855: utf-8"
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor: "rgba(183, 183, 17, 0.2)"
+        borderStyle: "none"
+      blinkOn:
+        backgroundColor: "rgba(183, 183, 17, 0.7)"
+        borderStyle: "none"
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "spell-check"
+      "wrap-guide"
+      "highlight-line"
+    ]
+    packagesWithKeymapsDisabled: [
+      "symbols-view"
+      "advanced-open-file"
+    ]
+    telemetryConsent: "limited"
+  "cursor-history": {}
+  "disable-keybindings":
+    allCommunityPackages: true
+    prefixKeys: [
+      "ctrl-k"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "VL Gothic"
+    fontSize: 17
+    invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "b2263029-18a1-a86e-7a0a-5aa25f2fd921"
+  "file-explorer": {}
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder": {}
+  "git-blame":
+    columnWidth: 250
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-log": {}
+  "highlight-line":
+    enableBackgroundColor: false
+  "keybinding-cheatsheet": {}
+  latex:
+    engine: "lualatex"
+    sumatraPath: "D:/21459004_home/dotbox/bin/SumatraPDF.exe"
+    texPath: "C:/texlive/2016/bin/win32"
+  "markdown-preview": {}
+  minimap:
+    displayCodeHighlights: false
+    plugins:
+      bookmarks: false
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": false
+      "git-diffDecorationsZIndex": 0
+      "minimap-autohide": true
+      "minimap-hide": true
+      "minimap-hideDecorationsZIndex": 0
+    scrollAnimation: true
+  "minimap-git-diff":
+    useGutterDecoration: true
+  "spell-check": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
+".diff.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".erb.html.text":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
+".ruby.source":
+  editor:
+    tabLength: 2
+".source.yaml":
+  editor:
+    autoIndentOnPaste: false
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: false
+    softWrapAtPreferredLineLength: false
+    tabLength: 2

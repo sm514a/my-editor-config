@@ -1,0 +1,81 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+/*
+http://kokufu.blogspot.jp/2015/07/atom-2.html
+atom-text-editor の他に以下のようなものもあります。
+    atom-workspace
+    .tree-view
+    .tab-bar
+    .status-bar
+    .markdown-preview
+*/
+
+.tree-view {
+  font-family: "meiryo ui";
+//  font-family: "vl gothic";
+//  font-family: "myrica m";
+  font-size: 11px;
+  padding: 1px;
+}
+
+.tab-bar {
+  font-family: "Meiryo UI";
+  font-size: 12px;
+}
+
+atom-workspace {
+  font-family: "Meiryo UI";
+//  font-family: "vl gothic";
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+//  font-family: "Inconsolata", "MS Mincho"
+//    font-family: "myrica m";
+  font-family: "vl gothic";
+//  font-family: "Meiryo";
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+.markdown-preview { font-family: "Meiryo"; h1, h2, h3, h4, h5, h6 { font-family: "Meiryo"; } }
+
+atom-text-editor .vertical-scrollbar,
+atom-text-editor::shadow .vertical-scrollbar {
+  opacity: 0;
+  width: 0;
+}
+
+atom-text-editor, atom-text-editor::shadow {
+  .highlight.ideographic-space {
+    .region:after {
+      content: '□';
+    }
+  }
+}
+
+.minimap .cursor-line {
+  background: rgba(183, 183, 17, 0.3);
+}
+
+atom-text-editor::shadow .lines .line.cursor-line {
+  background-color: rgba(192, 192, 17, 0.05);
+}
+
+
+// atom-text-editor::shadow .highlight.find-result .region {
+//   background: rgba(192, 192, 17, 0.6);
+// }
