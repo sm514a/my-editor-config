@@ -15,7 +15,7 @@
         backgroundColor: "rgba(183, 183, 17, 0.2)"
         borderStyle: "none"
       blinkOn:
-        backgroundColor: "rgba(183, 183, 17, 0.7)"
+        backgroundColor: "rgba(183, 183, 17, 0.8)"
         borderStyle: "none"
   core:
     autoHideMenuBar: true
