@@ -28,21 +28,24 @@
   'ctrl-shift-g': 'go-to-line:toggle'
 #  'alt-\\': 'unset!'
   'alt-\\': 'shrink-whitespace:shrink'
-  
   'ctrl-p': 'core:move-up'
   'ctrl-alt-shift-F12': 'project-manager:save-project'
   'f9': 'zsh-prompt'
   'f12': 'project-manager:list-projects'
 #  'ctrl-x b':'fuzzy-finder:toggle-buffer-finder'
 #  'ctrl-x ctrl-b':'fuzzy-finder:toggle-file-finder'
-
   'ctrl-x ctrl-f': 'advanced-open-file:toggle'
   'ctrl-x ctrl-c':'application:quit'
  
+  'ctrl-space': 'mark:toggle'
+  'ctrl-alt-w': 'mark:select-to-mark'
+  'ctrl-alt-space': 'mark:select-to-mark'
+  'ctrl-x ctrl-x': 'mark:swap'
   
 'atom-workspace atom-text-editor':
-  'ctrl-space': 'text-select-mode:toggle'
-  'ctrl-w': 'core:cut'
+#  'ctrl-space': 'mark:toggle'
+#  'ctrl-alt-space': 'mark:select-to-mark'
+#  'ctrl-x ctrl-x': 'mark:swap'
   'ctrl-h': 'core:backspace'
   'alt-w': 'core:copy'
   'ctrl-g':'core:cancel'
