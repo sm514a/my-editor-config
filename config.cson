@@ -25,6 +25,7 @@
       "highlight-line"
     ]
     packagesWithKeymapsDisabled: [
+      "autocomplete-plus"
       "symbols-view"
       "advanced-open-file"
     ]
@@ -49,7 +50,7 @@
   "file-explorer": {}
   "find-and-replace":
     closeFindPanelAfterSearch: true
-    openProjectFindResultsInRightPane: true
+    projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
     columnWidth: 250
@@ -65,9 +66,8 @@
     texPath: "C:/texlive/2016/bin/win32"
   "markdown-preview": {}
   minimap:
-    displayCodeHighlights: false
     plugins:
-      bookmarks: false
+      bookmarks: true
       bookmarksDecorationsZIndex: 0
       cursorline: true
       cursorlineDecorationsZIndex: 0
