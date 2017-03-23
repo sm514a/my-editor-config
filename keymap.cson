@@ -36,18 +36,23 @@
 #  'ctrl-x ctrl-b':'fuzzy-finder:toggle-file-finder'
   'ctrl-x ctrl-f': 'advanced-open-file:toggle'
   'ctrl-x ctrl-c':'application:quit'
- 
-  'ctrl-space': 'mark:toggle'
+
+  'ctrl-space': 'mark:set-mark'
+  'ctrl-w': 'mark:select-to-mark-and-cut'
+  'alt-w': 'mark:select-to-mark-and-copy'
   'ctrl-alt-w': 'mark:select-to-mark'
   'ctrl-alt-space': 'mark:select-to-mark'
   'ctrl-x ctrl-x': 'mark:swap'
-  
+
+'.platform-win32':
+  'ctrl-.': 'key-peek:toggle'
+    
 'atom-workspace atom-text-editor':
 #  'ctrl-space': 'mark:toggle'
 #  'ctrl-alt-space': 'mark:select-to-mark'
 #  'ctrl-x ctrl-x': 'mark:swap'
   'ctrl-h': 'core:backspace'
-  'alt-w': 'core:copy'
+#  'alt-w': 'core:copy'
   'ctrl-g':'core:cancel'
   'ctrl-k':'editor:cut-to-end-of-line'
   'ctrl-shift-n': 'editor:move-line-down'
@@ -66,10 +71,6 @@
 'atom-workspace:not([mini])':
   'alt-shift-n': 'project-find-navigation:next'
   'alt-shift-p': 'project-find-navigation:prev'
-  'ctrl->':     'cursor-history:next'
-  'ctrl-<':     'cursor-history:prev'
-  #  'F11': 'project-find-navigation:next'
-  #  'shift-F11': 'project-find-navigation:prev'
 
 '.platform-win32 atom-workspace atom-text-editor:not(.mini)':
   'ctrl-l': 'center-line:toggle'
@@ -140,10 +141,6 @@
   'ctrl-x o': 'window:focus-next-pane'
   'ctrl-x s': 'core:save'
 
-  'alt-y': 'clip-history:paste'
-  'ctrl-alt-y': 'clip-history:paste-newer'
-  'ctrl-y': 'core:paste'
-
   'alt-<':'core:move-to-top'
   'alt->':'core:move-to-bottom'
 
@@ -171,10 +168,6 @@
   'Shift-f5': 'project-find:search-under-cursor'
 #  'alt-ctrl-s': 'find-and-replace:search-under-cursor'
 #  'ctrl-;': 'find-and-replace:search-under-cursor'
-
-#  'ctrl-y': 'clip-history:paste'
-#  'ctrl-Y': 'clip-history:paste-last'
-#  'alt-y': 'clip-history:paste'
 
   'ctrl-n':'core:move-down'
   'ctrl-p':'core:move-up'
