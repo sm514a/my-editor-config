@@ -77,6 +77,7 @@
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
   'ctrl-alt-d': 'find-and-replace:select-next'
+  'ctrl-y':'core:paste'
   'ctrl-a':'editor:move-to-first-character-of-line'
   'ctrl-e': 'editor:move-to-end-of-line'
 #  'ctrl-e': 'editor:move-to-end-of-screen-line'
