@@ -23,11 +23,9 @@
 # https://github.com/bevry/cson#what-is-cson
 
 '.platform-win32, .platform-linux':
-#  'ctrl-g': 'unset!'
   'ctrl-g': 'core:cancel'
   'ctrl-shift-g': 'go-to-line:toggle'
-#  'alt-\\': 'unset!'
-  'alt-\\': 'shrink-whitespace:shrink'
+  'alt-\\': 'shrink-spaces:shrink'
   'ctrl-p': 'core:move-up'
   'ctrl-alt-shift-F12': 'project-manager:save-project'
   'f9': 'zsh-prompt'
