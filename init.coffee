@@ -17,22 +17,20 @@ atom.commands.add 'atom-text-editor', 'explorer-from-here', ->
   editor = atom.workspace.getActiveTextEditor()
   shell.showItemInFolder(editor.getPath())
 
+atom.commands.add 'atom-workspace', 'atom-restart', ->
+  atom.restartApplication()
+  
 atom.commands.add 'atom-text-editor', 'xyzzy-calc', ->
-  child_process = require('child_process')
-  child = child_process.spawn('c:/Users/Public/apl/xyzzy/xyzzy.exe', ['-f calc'])
+  child_process.spawn('c:/Users/Public/apl/xyzzy/xyzzy.exe', ['-f calc'])
+
+atom.commands.add 'atom-text-editor', 'xyzzy-open', ->
+  editor = atom.workspace.getActiveTextEditor()
+  child_process.spawn('c:/Users/Public/apl/xyzzy/xyzzy.exe', [editor.getPath(), '-g', editor.getCursorBufferPositions()[0].row]);
 
 atom.commands.add 'atom-text-editor', 'gitk', ->
-  prjdir = atom.project.getPaths()[0]
-  child_process = require('child_process')
-  child = child_process.spawn('gitk', [], {cwd: prjdir})
+  child_process.spawn('gitk', [], {cwd: atom.project.getPaths()[0]})
 
 atom.commands.add 'atom-text-editor', 'zsh-prompt', ->
-  prjdir = atom.project.getPaths()[0]
-  child_process = require('child_process')    #\"#{editor.getPath()}\"
-  child = child_process.spawn("C:/cygwin/bin/mintty.exe", ['-e', '/bin/xhere', '/bin/zsh.exe', prjdir])
+  child_process.spawn("C:/cygwin/bin/mintty.exe", ['-e', '/bin/xhere', '/bin/zsh.exe', atom.project.getPaths()[0]])
    
-atom.commands.add 'atom-text-editor', 'xyzzy-open', ->
-  child_process = require('child_process');
-  editor = atom.workspace.getActiveTextEditor()
-  child = child_process.spawn('c:/Users/Public/apl/xyzzy/xyzzy.exe', [editor.getPath(), '-g', editor.getCursorBufferPositions()[0].row]);
 

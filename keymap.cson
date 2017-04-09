@@ -154,7 +154,7 @@
 'atom-text-editor':
 #  'ctrl-m': 'unset!'
   'ctrl-m': 'editor:newline'
-  
+  'alt-ctrl-r': 'atom-restart'  
 
 'atom-workspace atom-text-editor:not([mini])':
   'ctrl-<': 'unset!'
@@ -166,7 +166,6 @@
   'shift-f6': 'symbols-view:toggle-file-symbols'
   
   'f7': 'project-find:search-under-cursor'
-  'Shift-f5': 'project-find:search-under-cursor'
 #  'alt-ctrl-s': 'find-and-replace:search-under-cursor'
 #  'ctrl-;': 'find-and-replace:search-under-cursor'
 
