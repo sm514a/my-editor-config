@@ -78,6 +78,7 @@
       "minimap-autohide": true
       "minimap-hide": true
       "minimap-hideDecorationsZIndex": 0
+    redrawDelay: 250
     scrollAnimation: true
   "minimap-git-diff":
     useGutterDecoration: true
