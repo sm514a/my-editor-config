@@ -42,9 +42,6 @@
   'ctrl-alt-space': 'mark:select-to-mark'
   'ctrl-x ctrl-x': 'mark:swap'
 
-'.platform-win32':
-  'ctrl-.': 'key-peek:toggle'
-    
 'atom-workspace atom-text-editor':
 #  'ctrl-space': 'mark:toggle'
 #  'ctrl-alt-space': 'mark:select-to-mark'
