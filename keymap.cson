@@ -27,9 +27,7 @@
   'ctrl-shift-g': 'go-to-line:toggle'
   'alt-\\': 'shrink-spaces:shrink'
   'ctrl-p': 'core:move-up'
-  'ctrl-alt-shift-F12': 'project-manager:save-project'
   'f9': 'zsh-prompt'
-  'f12': 'project-manager:list-projects'
 #  'ctrl-x b':'fuzzy-finder:toggle-buffer-finder'
 #  'ctrl-x ctrl-b':'fuzzy-finder:toggle-file-finder'
   'ctrl-x ctrl-f': 'advanced-open-file:toggle'
@@ -88,16 +86,13 @@
   'ctrl-p': 'advanced-open-file:move-cursor-up'
   'ctrl-n': 'advanced-open-file:move-cursor-down'
   
-'.project-manager input':
-  'enter': 'core:confirm'
-  'ctrl-m': 'core:confirm'  
-
 'body':
   'f8': 'atom-beautify:beautify-editor'
   'shift-f8': 'editor:toggle-soft-wrap'
   'shift-f3': 'editor:toggle-line-numbers'
   'f1': 'xyzzy-calc'
   'ctrl-f11': 'xyzzy-open'
+  'f12': 'xyzzy-open'
   'f4': 'explorer-from-here'
 
   'ctrl-0': 'tree-view:toggle-focus'
