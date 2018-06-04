@@ -26,13 +26,17 @@
       "spell-check"
       "wrap-guide"
       "highlight-line"
+      "whitespace"
     ]
     packagesWithKeymapsDisabled: [
       "autocomplete-plus"
       "symbols-view"
       "advanced-open-file"
+      "git-blame"
     ]
     telemetryConsent: "limited"
+    uriHandlerRegistration: "always"
+    useTreeSitterParsers: true
   "cursor-history": {}
   "disable-keybindings":
     allCommunityPackages: true
@@ -47,7 +51,6 @@
     scrollPastEnd: true
     softWrapAtPreferredLineLength: true
     tabLength: 4
-    tabType: "soft"
   "exception-reporting":
     userId: "b2263029-18a1-a86e-7a0a-5aa25f2fd921"
   "file-explorer": {}
@@ -56,7 +59,8 @@
     projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
-    columnWidth: 250
+    columnWidth: 215
+    showOnlyLastNames: true
   "git-diff":
     showIconsInEditorGutter: true
   "git-log": {}
@@ -99,7 +103,8 @@
     rightEditorColor: "green"
     scrollSyncType: "Vertical + Horizontal"
     syncHorizontalScroll: true
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace:

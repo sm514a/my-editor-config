@@ -26,10 +26,9 @@
   'ctrl-g': 'core:cancel'
   'ctrl-shift-g': 'go-to-line:toggle'
   'alt-\\': 'shrink-spaces:shrink'
-  'ctrl-p': 'core:move-up'
+#  'ctrl-p': 'core:move-up'
   'f9': 'zsh-prompt'
-#  'ctrl-x b':'fuzzy-finder:toggle-buffer-finder'
-#  'ctrl-x ctrl-b':'fuzzy-finder:toggle-file-finder'
+  'ctrl-alt-t':'fuzzy-finder:toggle-buffer-finder'
   'ctrl-x ctrl-f': 'advanced-open-file:toggle'
   'ctrl-x ctrl-c':'application:quit'
 
@@ -61,13 +60,6 @@
   'ctrl-g': 'autocomplete-plus:cancel'
   'ctrl-m': 'autocomplete-plus:confirm'
  
-'atom-workspace:not([mini])':
-  'alt-shift-n': 'project-find-navigation:next'
-  'alt-shift-p': 'project-find-navigation:prev'
-
-'.platform-win32 atom-workspace atom-text-editor:not(.mini)':
-  'ctrl-l': 'center-line:toggle'
-
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
   'ctrl-alt-d': 'find-and-replace:select-next'
   'ctrl-y':'core:paste'
@@ -87,7 +79,7 @@
   'ctrl-n': 'advanced-open-file:move-cursor-down'
   
 'body':
-  'f8': 'atom-beautify:beautify-editor'
+  'alt-f8': 'atom-beautify:beautify-editor'
   'shift-f8': 'editor:toggle-soft-wrap'
   'shift-f3': 'editor:toggle-line-numbers'
   'f1': 'xyzzy-calc'
@@ -147,15 +139,26 @@
   'alt-ctrl-r': 'atom-restart'  
 
 'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-l': 'center-line:toggle'
   'ctrl-<': 'unset!'
   'alt-n': 'find-and-replace:find-next'
   'alt-p': 'find-and-replace:find-previous'
-  'f5': 'symbols-view:go-to-declaration'
-  'f6': 'symbols-view:return-from-declaration'
-  'shift-f5': 'symbols-view:toggle-project-symbols'
-  'shift-f6': 'symbols-view:toggle-file-symbols'
-  
-  'f7': 'project-find:search-under-cursor'
+#  'f5': 'symbols-view:go-to-declaration'
+#  'f6': 'symbols-view:return-from-declaration'
+#  'shift-f5': 'symbols-view:toggle-project-symbols'
+#  'shift-f6': 'symbols-view:toggle-file-symbols'
+
+  'f5': 'atom-gtags:get-definitions'
+  'f7': 'atom-gtags:get-references'
+#  'alt-3': 'atom-gtags:get-symbols-of-file'
+#  'alt-4': 'atom-gtags:lookup-definitions'
+#  'alt-i': 'atom-gtags:single-file-update'
+  'shift-f6': 'atom-gtags:nav-forward'
+  'f6': 'atom-gtags:nav-back'
+  'alt-f7': 'atom-gtags:next-position'
+  'alt-shift-f7': 'atom-gtags:pre-position'
+  'alt-ctrl-shift-f7': 'project-find:search-under-cursor'
+  'f8': 'project-find:search-under-cursor'
 #  'alt-ctrl-s': 'find-and-replace:search-under-cursor'
 #  'ctrl-;': 'find-and-replace:search-under-cursor'
 
