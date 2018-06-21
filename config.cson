@@ -9,6 +9,8 @@
       _analyticsUserId: "ff6401b2-ef5e-4d85-a300-6bdbb2d6d63f"
     ruby:
       default_beautifier: "Ruby Beautify"
+  "atom-copy-on-select":
+    delay: 500
   "auto-encoding":
     disallowEncTypes: "windows1252, iso88592"
     forceEncTypes: "ibm855: utf-8"
@@ -46,6 +48,7 @@
   editor:
     backUpBeforeSaving: true
     fontFamily: "VL Gothic"
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 100
     scrollPastEnd: true
@@ -59,7 +62,7 @@
     projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder": {}
   "git-blame":
-    columnWidth: 215
+    columnWidth: 199
     showOnlyLastNames: true
   "git-diff":
     showIconsInEditorGutter: true
