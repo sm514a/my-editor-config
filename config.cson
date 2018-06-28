@@ -10,6 +10,7 @@
         borderStyle: "none"
   core:
     autoHideMenuBar: true
+    closeEmptyWindows: false
     disabledPackages: [
       "spell-check"
       "wrap-guide"
@@ -20,13 +21,18 @@
       "symbols-view"
       "advanced-open-file"
     ]
+    telemetryConsent: "limited"
   "disable-keybindings":
     allCommunityPackages: true
     prefixKeys: [
       "ctrl-k"
     ]
+  editor:
+    fontSize: 16
   "exception-reporting":
     userId: "8f3dd17c-2470-4a4f-b817-22564015c34c"
+  "fuzzy-finder":
+    prefillFromSelection: true
   minimap:
     plugins:
       cursorline: true
@@ -38,6 +44,9 @@
       "minimap-hide": true
       "minimap-hideDecorationsZIndex": 0
   telemetryConsent: "limited"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
 ".cpp.source":
   editor:
     showIndentGuide: true
