@@ -1,4 +1,6 @@
 "*":
+  "atom-copy-on-select":
+    delay: 500
   "autocomplete-plus": {}
   "block-cursor":
     global:
